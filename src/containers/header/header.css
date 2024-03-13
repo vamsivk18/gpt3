@@ -1,0 +1,139 @@
+.gpt3__header{
+    display: flex;
+}
+.gpt3__header-content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-right: 5rem;
+    flex: 3;
+}
+.gpt3__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em ;
+}
+.gpt3__header-content>p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: #81AFDD;
+    margin-top: 3rem;
+}
+.gpt3__header-content__input{
+    width: 100%;
+    display: flex;
+    padding: 3rem 0rem;
+}
+.gpt3__header-content__input input{
+    flex: 2;
+    min-height: 60px;
+    background:var(--color-footer);
+    border-radius: 5px 0px 0px 5px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    border: none;
+    padding-left: 1rem;
+    outline: none;
+}
+.gpt3__header-content__input input::placeholder{
+    color: #858585;
+}
+.gpt3__header-content__input button{
+    font-family: var(--font-family);
+    flex:1;
+    background-color: #FF4820;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+}
+.gpt3__header-content__people{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:flex-start;
+}
+.gpt3__header-content__people img{
+    width: 20%;
+}
+.gpt3__header-content__people p{
+    font-size: 16px;
+    color: #fff;
+    font-family: var(--font-family);
+    margin-top: 0;
+}
+.gpt3__header-content__people>*{
+    margin-right: 1rem;
+}
+.gpt3__header-image{
+    flex: 2;
+}
+.gpt3__header-image img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 2000px){
+    .gpt3__header-content>p{
+        margin-top: 1.5rem;
+    }
+    .gpt3__header-content__input{
+        margin: 1.5rem 0;
+    }
+    .gpt3__header-content__people p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .gpt3__header{
+        flex-direction: column;
+    }
+    .gpt3__header-content{
+        margin: 0 0 3rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .gpt3__header-content h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .gpt3__header-content__input button{
+        font-size: 15px;
+    }
+    .gpt3__header-content__people{
+        flex-direction: column;
+    }
+    .gpt3__header-content__people img{
+        width: 30%;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width: 490px){
+    .gpt3__header-content h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .gpt3__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .gpt3__header-content__input button{
+        font-size: 14px;
+    }
+    .gpt3__header-content__people{
+        flex-direction: column;
+    }
+    .gpt3__header-content__people img{
+        width: 30%;
+        margin-bottom: 0.5rem;
+    }
+}

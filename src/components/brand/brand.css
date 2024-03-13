@@ -1,0 +1,20 @@
+.gpt3__brand-content{
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px) {
+    .gpt3__brand-content>img{
+        width: 80px;
+    }
+}
+@media screen and (max-width:600px) {
+    .gpt3__brand-content>img{
+        width: 70px;
+    }
+}
+@media screen and (max-width:490px) {
+    .gpt3__brand-content>img{
+        width: 40px;
+    }
+}
